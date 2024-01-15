@@ -1,0 +1,49 @@
+{
+	"files": [
+		{
+			"path": "index.js",
+			"bookmarks": [
+				{
+					"line": 12,
+					"column": 0,
+					"label": "RAW vs JSX"
+				},
+				{
+					"line": 47,
+					"column": 0,
+					"label": "Single Parent"
+				},
+				{
+					"line": 65,
+					"column": 0,
+					"label": "Declarative Rendering"
+				},
+				{
+					"line": 94,
+					"column": 0,
+					"label": "Data Binding"
+				},
+				{
+					"line": 115,
+					"column": 0,
+					"label": "Conditional Rendering"
+				},
+				{
+					"line": 168,
+					"column": 0,
+					"label": "Loops and Arrays"
+				},
+				{
+					"line": 195,
+					"column": 0,
+					"label": "Event Handling"
+				},
+				{
+					"line": 227,
+					"column": 0,
+					"label": "Components"
+				}
+			]
+		}
+	]
+}

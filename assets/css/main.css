@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.dark {
+    background: black;
+    color: whitesmoke;
+}
+
+.light {
+    background: whitesmoke;
+    color: black;
+}
+
+img {
+    max-height: 300px;
+}
