@@ -4,52 +4,52 @@
 			"path": "index.js",
 			"bookmarks": [
 				{
-					"line": 5,
+					"line": 3,
 					"column": 0,
 					"label": "Raw API vs JSX"
 				},
 				{
-					"line": 18,
+					"line": 12,
 					"column": 0,
 					"label": "Simple JSX Examples"
 				},
 				{
-					"line": 43,
+					"line": 33,
 					"column": 0,
 					"label": "Single Parent"
 				},
 				{
-					"line": 61,
+					"line": 47,
 					"column": 0,
 					"label": "Declarative Rendering"
 				},
 				{
-					"line": 92,
+					"line": 74,
 					"column": 0,
 					"label": "Data Binding"
 				},
 				{
-					"line": 112,
+					"line": 90,
 					"column": 0,
 					"label": "Conditional Rendering"
 				},
 				{
-					"line": 162,
+					"line": 133,
 					"column": 0,
 					"label": "Loops and Arrays"
 				},
 				{
-					"line": 199,
+					"line": 165,
 					"column": 0,
 					"label": "Event Handling"
 				},
 				{
-					"line": 233,
+					"line": 194,
 					"column": 0,
 					"label": "Components"
 				},
 				{
-					"line": 247,
+					"line": 208,
 					"column": 23,
 					"label": "React App Structure'"
 				}

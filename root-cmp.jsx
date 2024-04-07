@@ -1,9 +1,3 @@
-function Welcome() {
-    return <div>
-        <h1>Hello there! </h1>
-    </div>
-}
-
 export function App() {
     const user = { fullName: 'Duki', age: 50 }
     return (
@@ -18,4 +12,10 @@ export function App() {
             </main>
         </div>
     )
+}
+
+function Welcome() {
+    return <div>
+        <h1>Hello there! </h1>
+    </div>
 }
