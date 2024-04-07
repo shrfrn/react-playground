@@ -1,44 +1,40 @@
-// In a real React App we will only have this code ONCE
-// our entire app will be rendered inside the App component
-
-// import { App } from './root-cmp.jsx'
-// const elRoot = document.getElementById('root')
-// const root = ReactDOM.createRoot(elRoot)
-// root.render(
-//     <App />
-// )
+const elRoot = document.getElementById('root')
+const root = ReactDOM.createRoot(elRoot)
 
 ////////////////////////////////////////////////////
 
 // :React RAW API compared to JSX
 
-const elRoot = document.getElementById('root')
-const root = ReactDOM.createRoot(elRoot)
+// const elBox = React.createElement('div',
+//     { className: 'container', children: 'Hello React!!!' })
+// // const elBox = <div className="container">Hello React!!!</div>
 
-const elBox = React.createElement('div',
-    { className: 'container', children: 'Hello React!!!' })
-// const elBox = <div className="container">Hello React!!!</div>
-
-root.render(elBox)
+// root.render(elBox)
 // console.log('elBox:', elBox)
 
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 
-// some more JSX
+// :Some more JSX
+
+// Example I
 
 // const names = <ol>
 //     <li>Puki</li>
 //     <li>Muki</li>
 // </ol>
 
-// // console.log('names:', names)
+// console.log('names:', names)
+// root.render(names)
+
+// Example II
 
 // const myLink = <a href="http://example.com" >
 //     <p className="special">Click me please</p>
 // </a>
 
+// console.log('myLink:', myLink)
 // root.render(myLink)
 
 ////////////////////////////////////////////////////
@@ -63,22 +59,24 @@ root.render(elBox)
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 
-// :Hello Interpolation - embedding JS expressions inside JSX
+// :Hello Declarative Rendering - 
+// :Embedding JS expressions inside JSX (Interpolation)
 
 // const fullName = 'Puki Ma'
 // const greeting = <h1>Hello {fullName}</h1>
 
 // root.render(
-//     greeting
-// // )
-
+    //     greeting
+    // )
+    
 // const sum = 2 + 1
+// const firstName = 'Jonni'
 // const container = <section>
 //     <p>
 //         {sum} ~ {Math.PI.toFixed(5)}
 //     </p>
 //     <p>
-//         {fullName + new Date()}
+//         {firstName + ' - ' + new Date().toDateString()}
 //         {console.log('render')}
 //     </p>
 // </section>
@@ -92,11 +90,10 @@ root.render(elBox)
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 
-// :Dynamic Attributes!
+// :Dynamic Attributes! (data binding)
 
+// const isDark = false
 // const dynClass = isDark ? 'dark' : 'light'
-
-// Add images
 
 // const imgName = (Math.random() > 0.5) ? 'dog' : 'cat'
 // const dynSrc = `./assets/img/${imgName}.jpg`
@@ -135,10 +132,10 @@ root.render(elBox)
 ///////////////////////////////////////////////
 // Option 2 - The Ternary Operator (short if)
 
-// var age = 5
+// var age = 25
 // const msg =
 //     <h1>
-//         {(age >= 18) ? <span>Old enough {Math.PI}</span> : <span> {'Too young' + age}</span>}
+//         {(age >= 18) ? <span>Old enough {Math.PI}</span> : <span> {'Too young - ' + age}</span>}
 //     </h1>
 
 // root.render(msg)
@@ -151,13 +148,10 @@ root.render(elBox)
 
 // const tasty =
 //     <ul>
-//         {(age < 20 && isAdult) && <li>Chips{age} </li>}
-//         {!isAdult && <li>Pizza</li>}
-//         {false}
-//         {null}
-//         {true && <li>hi</li>}
+//         <li>Chips</li>
+//         <li>Pizza</li>
 //         <li>Eggplant</li>
-//         {age > 50 && <li>Grappa</li>}
+//         <li>Grappa</li>
 //     </ul>
 
 // root.render(tasty)
@@ -167,6 +161,16 @@ root.render(elBox)
 ////////////////////////////////////////////////////
 
 // :Loops and Arrays
+
+// const names = ['Muki', 'Puki', 'Duki', 'Ruki', 'Muki'];
+
+// root.render(
+//     <p>{names}</p>
+// )
+
+// root.render(
+//     <p>{names.join(' ')}</p>
+// )
 
 // const names = ['Muki', 'Puki', 'Duki', 'Ruki', 'Muki'];
 
@@ -193,28 +197,30 @@ root.render(elBox)
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 
-// :Event Handling - passing arguments
-
-// const SomeButton = <button onClick={handleClick}>
-//     Click Me!
-// </button>
-
-// const SomeButton = <button onClick={(ev) => handleClick(ev, msg)}>
-//     Click Me!
-// </button>
-
-// const SomeButton = <button onClick={(ev) => alert( 'hihihi')}>
-//     Click Me!
-// </button>
+// :Event Handling
 
 // function handleClick(...args) {
 //     console.log('args:', args)
 // }
 
+// const SomeButton = <button onClick={handleClick}>
+//     Click Me!
+// </button>
+
+// root.render(
+//     SomeButton
+// )
+
+// Passing arguments
+
 // function handleClick(ev, msg) {
 //     console.log('ev:', ev)
 //     console.log('msg', msg)
 // }
+
+// const SomeButton = <button onClick={ev => handleClick(ev, 'Hi')}>
+//     Click Me!
+// </button>
 
 // root.render(
 //     SomeButton
@@ -233,9 +239,22 @@ root.render(elBox)
 
 // const section = <section className="container">
 //     <SomeFuncCmp />
-//     {false && <SomeFuncCmp />}
 // </section>
 
 // root.render(
 //     section
 // )
+
+// :React App Structure
+
+// In a real React App we will only have this code ONCE
+// our entire app will be rendered inside 
+// a single root component, usally called App
+
+// import { App } from './root-cmp.jsx'
+// const elRoot = document.getElementById('root')
+// const root = ReactDOM.createRoot(elRoot)
+// root.render(
+//     <App />
+// )
+
