@@ -39,6 +39,9 @@ const root = ReactDOM.createRoot(elRoot)
 //     <li>Orange</li>
 // </ul>
 
+// console.log('fruits:', fruits)
+// root.render(fruits)
+
 // TODO: add a heading
 
 // root.render(
@@ -51,9 +54,7 @@ const root = ReactDOM.createRoot(elRoot)
 // const fullName = 'Puki Ma'
 // const greeting = <h1>Hello {fullName}</h1>
 
-// root.render(
-    //     greeting
-    // )
+// root.render(greeting)
     
 // const sum = 2 + 1
 // const firstName = 'Jonni'
@@ -68,9 +69,7 @@ const root = ReactDOM.createRoot(elRoot)
 // </section>
 
 
-// root.render(
-//     container
-// )
+// root.render(container)
 
 // :Dynamic Attributes! (data binding)
 
@@ -169,28 +168,18 @@ const root = ReactDOM.createRoot(elRoot)
 //     console.log('args:', args)
 // }
 
-// const SomeButton = <button onClick={handleClick}>
-//     Click Me!
-// </button>
+// const SomeButton = <button onClick={handleClick}>Click Me!</button>
+// root.render(SomeButton)
 
-// root.render(
-//     SomeButton
-// )
-
-// Passing arguments
+// :Passing arguments to event handlers
 
 // function handleClick(ev, msg) {
 //     console.log('ev:', ev)
 //     console.log('msg', msg)
 // }
 
-// const SomeButton = <button onClick={ev => handleClick(ev, 'Hi')}>
-//     Click Me!
-// </button>
-
-// root.render(
-//     SomeButton
-// )
+// const SomeButton = <button onClick={ev => handleClick(ev, 'Hi')}>Click Me!</button>
+// root.render(SomeButton)
 
 // :React Components - function that returns JSX
 
@@ -215,6 +204,5 @@ const root = ReactDOM.createRoot(elRoot)
 // import { App } from './root-cmp.jsx'
 // const elRoot = document.getElementById('root')
 // const root = ReactDOM.createRoot(elRoot)
-// root.render(
-//     <App />
-// )
+
+// root.render(<App />)

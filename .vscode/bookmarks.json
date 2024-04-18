@@ -19,37 +19,37 @@
 					"label": "Single Parent"
 				},
 				{
-					"line": 47,
+					"line": 50,
 					"column": 0,
 					"label": "Declarative Rendering"
 				},
 				{
-					"line": 74,
+					"line": 73,
 					"column": 0,
 					"label": "Data Binding"
 				},
 				{
-					"line": 90,
+					"line": 89,
 					"column": 0,
 					"label": "Conditional Rendering"
 				},
 				{
-					"line": 133,
+					"line": 132,
 					"column": 0,
 					"label": "Loops and Arrays"
 				},
 				{
-					"line": 165,
+					"line": 164,
 					"column": 0,
 					"label": "Event Handling"
 				},
 				{
-					"line": 194,
+					"line": 183,
 					"column": 0,
 					"label": "Components"
 				},
 				{
-					"line": 208,
+					"line": 197,
 					"column": 23,
 					"label": "React App Structure'"
 				}
